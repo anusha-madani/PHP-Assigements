@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKSHEET TASK 01</title>
+</head>
+<style>
+    body{
+            font-family:Arial;
+            background:#d2cdcd;
+            padding:30px;
+        }
+        .head{
+            margin-left: 45%;
+            color: #4d3a3a; 
+            font-size: 45px; 
+            font-weight: bolder;          
+        }
+        .container{
+            max-width:550px;
+            margin:auto;
+            background:#fff;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px #cccccc;
+        }
+        input{
+            width:90%;
+            padding:10px;
+            margin:8px 0;
+            border-radius:5px;
+            border:1px solid #cccccc;
+        }
+        
+        button{
+             width:50%;
+             padding:10px;
+            margin:8px 0;
+            border-radius:5px;
+            border:1px solid #ccc;
+            background:#835656;
+            color:white;
+            font-weight:bold;
+            border:none;
+            cursor:pointer;
+        }
+        button:hover{
+            background:#9c8181;
+        }
+</style>
+<body>
+    <h1 class="head">TASK 01</h1>
+    <div class="container">
+        <h1>MARKSHEET GENERATER</h1>
+
+        <form action="marksheet.php" method="POST">
+            <label for="stname">STUDENT NAME : </label>
+            <input type="text" name="name" placeholder="Student Name" required>
+            <label for="sTmail">STUDENT EAMIL : </label>
+            <input type="email" name="email" placeholder="Student Email" required>
+            <label for="sTnum">ROLL NUMBER : </label>
+            <input type="text" name="rollno" placeholder="Roll Number" required>
+
+        <h3>ENTER MARKS FOR 7 SUBJECTS</h3>
+            <input type="nums" name="sub1" placeholder="Subject 1 Marks" required>
+            <input type="nums" name="sub2" placeholder="Subject 2 Marks" required>
+            <input type="nums" name="sub3" placeholder="Subject 3 Marks" required>
+            <input type="nums" name="sub4" placeholder="Subject 4 Marks" required>
+            <input type="nums" name="sub5" placeholder="Subject 5 Marks" required>
+            <input type="nums" name="sub6" placeholder="Subject 6 Marks" required>
+            <input type="nums" name="sub7" placeholder="Subject 7 Marks" required>
+
+            <button type="submit">Generate</button>
+
+        </form>
+    </div>
+</body>
+</html>
